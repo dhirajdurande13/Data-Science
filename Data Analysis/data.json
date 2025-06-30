@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "age": 28,
+      "email": "alice.johnson@example.com",
+      "city": "New York"
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "age": 34,
+      "email": "bob.smith@example.com",
+      "city": "Los Angeles"
+    },
+    {
+      "id": 3,
+      "name": "Charlie Davis",
+      "age": 25,
+      "email": "charlie.davis@example.com",
+      "city": "Chicago"
+    },
+    {
+      "id": 4,
+      "name": "Diana Evans",
+      "age": 31,
+      "email": "diana.evans@example.com",
+      "city": "Houston"
+    },
+    {
+      "id": 5,
+      "name": "Ethan Brown",
+      "age": 29,
+      "email": "ethan.brown@example.com",
+      "city": "Phoenix"
+    },
+    {
+      "id": 6,
+      "name": "Fiona Wilson",
+      "age": 27,
+      "email": "fiona.wilson@example.com",
+      "city": "Philadelphia"
+    },
+    {
+      "id": 7,
+      "name": "George Clark",
+      "age": 33,
+      "email": "george.clark@example.com",
+      "city": "San Antonio"
+    },
+    {
+      "id": 8,
+      "name": "Hannah Lewis",
+      "age": 26,
+      "email": "hannah.lewis@example.com",
+      "city": "San Diego"
+    },
+    {
+      "id": 9,
+      "name": "Ian Walker",
+      "age": 30,
+      "email": "ian.walker@example.com",
+      "city": "Dallas"
+    },
+    {
+      "id": 10,
+      "name": "Julia Hall",
+      "age": 32,
+      "email": "julia.hall@example.com",
+      "city": "San Jose"
+    }
+  ]
+  
