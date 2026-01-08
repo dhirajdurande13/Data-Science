@@ -1,0 +1,10 @@
+# Virtual environments
+venv/
+venv64/
+
+# Model files
+ridge_model.pkl
+scaler.pkl
+
+# Python cache
+__pycache__/

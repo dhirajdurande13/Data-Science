@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FWI Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+        .container {
+            width: 500px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 12px;
+            background: #e9f7ef;
+            border-left: 5px solid #28a745;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Forest Fire Weather Index (FWI)</h2>
+
+    <form action="/predict_data" method="POST">
+
+        <label>Temperature</label>
+        <input type="number" step="any" name="Temperature" required>
+
+        <label>Relative Humidity (RH)</label>
+        <input type="number" step="any" name="RH" required>
+
+        <label>Wind Speed (Ws)</label>
+        <input type="number" step="any" name="Ws" required>
+
+        <label>Rain</label>
+        <input type="number" step="any" name="Rain" required>
+
+        <label>FFMC</label>
+        <input type="number" step="any" name="FFMC" required>
+
+        <label>DMC</label>
+        <input type="number" step="any" name="DMC" required>
+
+        <label>ISI</label>
+        <input type="number" step="any" name="ISI" required>
+
+        <label>Classes</label>
+        <select name="Classes" required>
+            <option value="0">No Fire</option>
+            <option value="1">Fire</option>
+        </select>
+
+        <label>Region</label>
+        <select name="Region" required>
+            <option value="0">Region 0</option>
+            <option value="1">Region 1</option>
+        </select>
+
+        <button type="submit">Predict FWI</button>
+    </form>
+
+    {% if prediction is not none %}
+        <div class="result">
+            <strong>Predicted FWI:</strong> {{ prediction }}
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
